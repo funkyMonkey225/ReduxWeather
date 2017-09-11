@@ -6,7 +6,7 @@ const ROOT_URLS = `http://samples.openweathermap.org/data/2.5/forecast?appid=${A
 // Better to define actions as constants so they are easily edited and passed between actions/reducers
 export const FETCH_WEATHER = 'FETCH_WEATHER';
 
-export function fetchWeather() {
+export function fetchWeather(city) {
     const url = `${ROOT_URL}&q=${city},us`;
     const request = axios.get(url);
     return {

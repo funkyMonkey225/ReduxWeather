@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
+import {connect} from 'react-redux';
+import {bindActionCreators} from 'redux';
+import {fetchWeather} from '../actions/index';
 
-export default class SearchBar extends Component {
+class SearchBar extends Component {
     constructor(props) {
         super(props);
         this.state = {term: ''};
@@ -29,3 +32,11 @@ export default class SearchBar extends Component {
         );
     }
 }
+
+function mapDispatchToProps(dispatch) {
+    // Calls action creator returns action, makes sure action flows down middleware into reducers
+    return bindActionCreators({fetchWeather}, dispatch);
+}
+
+// Function always goes in as second argument, first argument is state
+export default connect(null, mapDispatchToProps)(SearchBar);
