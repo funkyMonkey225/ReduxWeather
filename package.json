@@ -43,6 +43,7 @@
     "redux": "^3.0.4",
     "redux-promise": "^0.5.3",
     "sshpk": "^1.16.0",
-    "tough-cookie": "^3.0.1"
+    "tough-cookie": "^3.0.1",
+    "url-parse": "^1.4.4"
   }
 }
