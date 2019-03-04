@@ -21,8 +21,7 @@
     "jsdom": "^8.1.0",
     "mocha": "^2.4.5",
     "react-addons-test-utils": "^0.14.7",
-    "webpack": "^1.12.9",
-    "webpack-dev-server": "^1.14.0"
+    "webpack": "^1.12.9"
   },
   "dependencies": {
     "axios": "^0.16.2",
@@ -45,6 +44,7 @@
     "redux-promise": "^0.5.3",
     "sshpk": "^1.16.0",
     "tough-cookie": "^3.0.1",
-    "url-parse": "^1.4.4"
+    "url-parse": "^1.4.4",
+    "webpack-dev-server": "^3.2.1"
   }
 }
